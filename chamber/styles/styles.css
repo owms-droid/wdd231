@@ -52,6 +52,11 @@ footer div a {
 	display: flex;
 	justify-content: space-between;
 }
+
+footer div a img {
+	width: 24px; 
+	height: 24px;
+}
 /*Directory Styles*/
 button {
 	margin: 10px;
