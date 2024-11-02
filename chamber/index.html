@@ -1,26 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <header>
 
-    </header>
-    <main>
-        <h1>API Weather Lab</h1>
-        <div>
-            <h2 id="town"></h2>
-            <img id="graphic" src="" alt="">
-            <p id="description"></p>
-            <p id="temperature"></p>
-        </div>
-    </main>
+    <title>Home | Huanuco Chamber of Commerce</title>
+    <meta name="author" content="Oliver Modesto">
+    <meta name="description" content="This is the home page for the Huanuco Chamber of Commerce - A class Project for Oliver Modesto's classwork in 'WDD231 - Web Frontend Development I'.">
+
+    <meta property="og:description" content="Huanuco Chamber of Commerce - a class Project for Oliver Modesto 's classwork in 'WDD231 - Web Frontend Development I'.">
+    <meta property="og:image" content="https://owms-droid.github.io/wdd231/chamber/images/ogchamber.png">
+    <meta property="og:site_name" content="Huanuco Chamber of Commerce | OliverMS | WDD231">
+    <meta property="og:title" content="Home | Huanuco Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://owms-droid.github.io/wdd231/chamber">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image:alt" content="Huanuco Chamber of Commerce Logo">
+
+    <link rel="icon" href="/chamber/images/favicon.ico">
+    <link rel="stylesheet" href="/chamber/styles/normalize.css">
+    <link rel="stylesheet" href="/chamber/styles/styles.css">
+    <link rel="stylesheet" href="/chamber/styles/style-large.css">
+    <link rel="stylesheet" href="/chamber/styles/home.css">
+    <link rel="stylesheet" href="/chamber/styles/home-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     
-    <footer>
-        
-    </footer>
+    <script src="/chamber/scripts/date.js" type="module"></script>
+    <script src="/chamber/scripts/darkmode.js" type="module"></script>
+    <script src="/chamber/scripts/menu.js" type="module"></script>
+    <script src="/chamber/scripts/weather.js" type="module"></script>
+    <script src="/chamber/scripts/spotlight.js" type="module"></script>
+    <script src="/chamber/scripts/event.js" type="module"></script>
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <div>
+                <img src="/chamber/images/huanuco-chamber-logo.png" alt="Huanuco Chamber of Commerce Logo">
+                <div id="title-text">
+                    <h1 id="title">Huanuco</h1>
+                    <p id="subtitle">Chamber of Commerce</p>
+                </div>
+                <div id="nav-holder">
+                    <nav id="animateme">
+                        <a href="./" class="active">Home</a>
+                        <a href="directory.html">Directory</a>
+                        <a href="join.html">Join</a>
+                        <a href="discover.html">Discover</a>
+                    </nav>
+                </div>
+                <div id="header-buttons">
+                    <button id="darkmode" type="button" aria-label="dark mode toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <mask id="e">
+                                <mask id="f">
+                                    <path d="m12 0 12 0 0 24 -12 0" fill="#fff" />
+                                </mask>
+                                <circle cx="12" cy="12" r="11" fill="#fff" />
+                                <circle mask="url(#f)" cx="12" cy="12" r="10" fill="#000" />
+                            </mask>
+                            <circle class="dark" mask="url(#e)" cx="12" cy="12" r="11" fill="#000" />
+                            <circle class="light" mask="url(#e)" cx="12" cy="12" r="11" fill="#fff" />
+                        </svg>
+                    </button>
+                    <button id="menu" type="button" aria-label="navigation menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path class="ham-x light" fill="#efefef" d="m12 10.55 6-6a.25.25 0 011.42 1.42l-6 6 6 6a.25.25 0 01-1.42 1.42l-6-6-6 6a.25.25 0 01-1.42-1.42l6-6-6-6a.25.25 0 111.42-1.42z" />
+                            <path class="ham-bars light" fill="#efefef" d="m4 4.25a1 1 0 000 2h16a1 1 0 000-2zm0 6.71699a1 1 0 000 2h16a1 1 0 000-2zm0 6.71699a1 1 0 000 2h16a1 1 0 000-2z" />
+                            <path class="ham-x dark" fill="#101010" d="m12 10.55 6-6a.25.25 0 011.42 1.42l-6 6 6 6a.25.25 0 01-1.42 1.42l-6-6-6 6a.25.25 0 01-1.42-1.42l6-6-6-6a.25.25 0 111.42-1.42z" />
+                            <path class="ham-bars dark" fill="#101010" d="m4 4.25a1 1 0 000 2h16a1 1 0 000-2zm0 6.71699a1 1 0 000 2h16a1 1 0 000-2zm0 6.71699a1 1 0 000 2h16a1 1 0 000-2z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section id="hero">
+                <img src="/chamber/images/hero-huanuco.webp" alt="Hero image" width="740" height="700" id="hero-img">
+                <div id="hero-text">
+                    <h2 id="hero-title">
+                        <span id="hero-city" title="Your City.">City of Eternal</span>
+                        <span id="hero-table" title="Your Table.">Spring.</span>
+                    </h2>
+                    <a href="join.html" id="call-button">Be Welcome!</a>
+                </div>
+            </section>
+            <div id="main">
+                <div id="page">
+                    <h2 id="home-title">Home</h2>
+                    <section id="events">
+                        <h3 id="events-title" class="section-header">Events</h3>
+                        <ul id="event-list">
+                            <li class="event-card">
+                                <p class="event-title">Chamarra<wbr> Fest</p>
+                                <p class="event-date">When: <span>Oct. 10th</span></p>
+                                <p class="event-place">Where: <span>Main Square</span></p>
+                                <p class="event-info">Why: <span>To enjoy the Gourds!</span></p>
+                            </li>
+                            <li class="event-card">
+                                <p class="event-title">Halloween Trunk-or-Treat</p>
+                                <p class="event-date">When: <span>Oct. 31st</span></p>
+                                <p class="event-place">Where: <span>Main St. by City Hall</span></p>
+                                <p class="event-info">Why: <span>Spooky Trick-or-Treating!</span></p>
+                            </li>
+                            <li class="event-card">
+                                <p class="event-title">Thanksgiving Parade</p>
+                                <p class="event-date">When: <span>Nov. 21st</span></p>
+                                <p class="event-place">Where: <span>Main St.</span></p>
+                                <p class="event-info">Why: <span>Let's show them what A REAL parade looks like!</span></p>
+                            </li>
+                            <li class="event-card">
+                                <p class="event-title">Hanakkah & Christmas Cherity Potluck</p>
+                                <p class="event-date">When: <span>Dec. 23rd</span></p>
+                                <p class="event-place">Where: <span>Community Center</span></p>
+                                <p class="event-info">Why: <span>Think of the Children</span></p>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section id="current-weather">
+                        <h3 id="weather-title" class="section-header">Current Weather</h3>
+                        <ol id="weather-events">
+                            <li class="weather-event single-event">
+                                <div class=""></div><span>Loading</span>
+                            </li>
+                        </ol>
+                        <ul id="weather-info">
+                            <li><span id="temp-current">Loading...</span>&deg;F</li>
+                            <li id="weather-desc"></li>
+                            <li>High: <span id="temp-high">Loading...</span>&deg;</li>
+                            <li>Low: <span id="temp-low">Loading...</span>&deg;</li>
+                            <li>Humidity: <span id="humidity">Loading...</span>%</li>
+                            <li>Sunrise: <span id="sunrise">Loading...</span></li>
+                            <li>Sunset: <span id="sunset">Loading...</span></li>
+                        </ul>
+                    </section>
+
+                    <section id="forecast-weather">
+                        <h3 id="forecast-title" class="section-header">Weather Forecast</h3>
+                        <ol id="forecast-info">
+                            <li><span id="forecast-today">Loading...</span>&deg;F</li>
+                            <li><span id="forecast-tomorrow">Loading...</span>&deg;F</li>
+                            <li><span id="forecast-overmorrow">Loading...</span>&deg;F</li>
+                        </ol>
+                    </section>
+
+                    <ul id="spotlight-list">
+                        <li class="spotlight-card level-2">
+                            <h4 class="card-header">placeholder Header</h4>
+                            <p class="card-phone">phone: <span>(123)555-4567</span></p>
+                            <p class="card-addr">address: <span>123 Any St Huanuco CA 92084</span></p>
+                            <p class="card-url">website: <span>placeholder.web</span></p>
+                        </li>
+                        <li class="spotlight-card level-3">
+                            <h4 class="card-header">placeholder Header</h4>
+                            <p class="card-phone">phone: <span>(123)555-4567</span></p>
+                            <p class="card-addr">address: <span>123 Any St Huanuco CA 92084</span></p>
+                            <p class="card-url">website: <span>placeholder.web</span></p>
+                        </li>
+                        <li class="spotlight-card level-2">
+                            <h4 class="card-header">placeholder Header</h4>
+                            <p class="card-phone">phone: <span>(123)555-4567</span></p>
+                            <p class="card-addr">address: <span>123 Any St Huanuco CA 92084</span></p>
+                            <p class="card-url">website: <span>placeholder.web</span></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div>
+                <div id="contact">
+                    <p><b>Huanuco Chamber of Commerce</b></p>
+                    <p>Damaso Beraun St.</p>
+                    <p>Huanuco, PE 10001</p>
+                    <p>info@huanucochamber.org</p>
+                    <p>(+51)841890</p>
+                </div>
+                <div id="socials">
+                    <a href="https://www.youtube.com/user/HuanucoChamberCommerce" target="_blank">
+                        <img src="images/youtube.png" alt="youtube icon" width="64" height="64">
+                    </a>
+                    <a href="https://x.com/Huanucochamber" target="_blank">
+                        <img src="images/twitter.png" alt="twitter icon" width="64" height="64">
+                    </a>
+                    <a href="https://www.linkedin.com/company/Huanuco-chamber-of-commerce/" target="_blank">
+                        <img src="images/linkedin.png" alt="linkedin icon" width="64" height="64">
+                    </a>
+                </div>
+                <div id="info">
+                    <p>WDD231 Class Project</p>
+                    <p>Oliver Modesto </p>
+                    <p>&copy;<span id="currentyear">####</span> Huanuco Chamber of Commerce</p>
+                    <p id="lastModified">##/##/## ##:##:##</p>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
+
 </html>

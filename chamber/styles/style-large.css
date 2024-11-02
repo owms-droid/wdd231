@@ -1,0 +1,89 @@
+@media screen and (min-width:868px) {
+
+    header>div {
+        grid-template-columns: 64px 2fr 1fr 24px;
+        padding: 0 12px;
+    }
+
+    #nav-holder {
+        display: flex;
+        overflow: visible;
+        position: static;
+        width: 100%;
+    }
+
+    nav {
+        align-items: last baseline;
+        border: 0;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 4px 4px 0;
+        position: static;
+        width: 100%;
+    }
+
+    nav a {
+        border-radius: 16px;
+        color: var(--nav-txt);
+        opacity: 1;
+        padding: 2px 8px;
+    }
+
+    .active {
+        background-color: unset;
+        text-decoration: underline;
+    }
+
+    .active::before {
+        content: '';
+    }
+
+    #header-buttons {
+        align-items: last baseline;
+    }
+
+    #darkmode {
+        bottom: 8px;
+        height: 24px;
+        position: relative;
+        right: 2px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    footer>div {
+        display: grid;
+        font-size: 0.7rem;
+        gap: unset;
+        height: 126px;
+        grid-template-columns: auto auto auto;
+        padding: 8px;
+    }
+
+    footer>div>div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #contact {
+        gap: 5.5px;
+        margin-top: 8px;
+        padding-left: 10px;
+    }
+
+    #socials {
+        flex-direction: row;
+        gap: 22px;
+        margin-top: 2px;
+        padding-left: 132px;
+        width: 100%;
+    }
+
+    #info {
+        gap: 6px;
+        margin-top: 16px;
+        padding-left: 48px;
+    }
+}

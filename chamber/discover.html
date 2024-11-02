@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Huanuco Chamber of Commerce | Discover</title>
+    <meta name="author" content="Oliver Modesto">
+    <meta name="description" content="This is the Discover page for the Huanuco Chamber of Commerce - A class Project for Oliver Modesto's classwork in 'WDD231 - Web Frontend Development I'.">
+
+    <meta property="og:description" content="Huanuco Chamber of Commerce - a class Project for Oliver Modesto's classwork in 'WDD231 - Web Frontend Development I'.">
+    <meta property="og:image" content="https://owms-droid.github.io/wdd231/chamber/images/ogchamber.png">
+    <meta property="og:site_name" content="Huanuco Chamber of Commerce | Oliver MS | WDD231">
+    <meta property="og:title" content="Huanuco Chamber of Commerce | Discover">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://owms-droid.github.io/wdd231/chamber/discover.html">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image:alt" content="Huanuco Chamber of Commerce Logo">
+
+    <link rel="icon" href="/chamber/images/favicon.ico">
+    <link rel="stylesheet" href="/chamber/styles/normalize.css">
+    <link rel="stylesheet" href="/chamber/styles/styles.css">
+    <link rel="stylesheet" href="/chamber/styles/style-large.css">
+    <link rel="stylesheet" href="/chamber/styles/thankyou.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&family=Lora:ital@0;1&display=swap" rel="stylesheet">
+
+    <script src="/chamber/scripts/date.js" type="module"></script>
+    <script src="/chamber/scripts/darkmode.js" type="module"></script>
+    <script src="/chamber/scripts/menu.js" type="module"></script>
+    <script src="/chamber/scripts/discover.js" type="module"></script>
+</head>
+
+<body>
+    <div id="content" class="marg-0a bg-color-lightblue">
+        <header class="bg-color-darkblue color-lm-white">
+            <div class="marg-0a width100">
+                <img src="/chamber/images/huanuco-chamber-logo.png" alt="huanuco-chamber-logo">
+                <div id="title-text" class="width100">
+                    <h1 id="title" class="font-size-2rem">Huanuco</h1>
+                    <p id="subtitle" class="font-size-0-75rem">Chamber of Commerce</p>
+                </div>
+                <div id="nav-holder">
+                    <nav id="animateme" class="font-size-1-5rem bg-color-darkblue color-lm-white">
+                        <a href="./">Home</a>
+                        <a href="directory.html">Directory</a>
+                        <a href="join.html">Join</a>
+                        <a href="discover.html" class="active">Discover</a>
+                    </nav>
+                </div>
+                <div id="header-buttons">
+                    <button id="darkmode" class="width100" type="button" aria-label="dark mode toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <mask id="e">
+                                <mask id="f">
+                                    <path d="m12 0 12 0 0 24 -12 0" fill="#fff" />
+                                </mask>
+                                <circle cx="12" cy="12" r="11" fill="#fff" />
+                                <circle mask="url(#f)" cx="12" cy="12" r="10" fill="#000" />
+                            </mask>
+                            <circle class="dark" mask="url(#e)" cx="12" cy="12" r="11" fill="#000" />
+                            <circle class="light" mask="url(#e)" cx="12" cy="12" r="11" fill="#fff" />
+                        </svg>
+                    </button>
+                    <button id="menu" class="width100" type="button" aria-label="navigation menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path class="ham-x light" fill="#efefef" d="m12 10.55 6-6a.25.25 0 011.42 1.42l-6 6 6 6a.25.25 0 01-1.42 1.42l-6-6-6 6a.25.25 0 01-1.42-1.42l6-6-6-6a.25.25 0 111.42-1.42z" />
+                            <path class="ham-bars light" fill="#efefef" d="m4 4.25a1 1 0 000 2h16a1 1 0 000-2zm0 6.71699a1 1 0 000 2h16a1 1 0 000-2zm0 6.71699a1 1 0 000 2h16a1 1 0 000-2z" />
+                            <path class="ham-x dark" fill="#101010" d="m12 10.55 6-6a.25.25 0 011.42 1.42l-6 6 6 6a.25.25 0 01-1.42 1.42l-6-6-6 6a.25.25 0 01-1.42-1.42l6-6-6-6a.25.25 0 111.42-1.42z" />
+                            <path class="ham-bars dark" fill="#101010" d="m4 4.25a1 1 0 000 2h16a1 1 0 000-2zm0 6.71699a1 1 0 000 2h16a1 1 0 000-2zm0 6.71699a1 1 0 000 2h16a1 1 0 000-2z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main class="marg-0a width100 bg-color-green">
+            <div id="discover-page" class="marg-0a style">
+                <p id="last-visited" class="header center">{last visited message}</p>
+                <section id="welcome-to-vista">
+                    <h2 class="center">About Huanuco</h2>
+                    <p><q>Huánuco city offers a peek into Peru’s deep history. It was founded in 1539 by Spanish conquistador Gómez de Alvarado. The city still holds its colonial charm, with many buildings showing the Spanish influence. Walking through Huánuco feels like stepping back in time, letting you see its cultural heritage.</q></p>
+                    <p><sub><cite>Source: <a href="https://www.peru-explorer.com/huanuco-peru-travel-information-your-guide.htm" target="_blank">Huanuco.gov</a></cite></sub></p>
+                </section>
+                <section id="sights-and-sounds">
+                    <h2 class="center">Sights and Sounds</h2>
+                    <ul class="font-size-0-9rem">
+                        <li><a href="http://www.altaHuanucogardens.org/" target="_blank">Huánuco Plaza de Armas</a></li>
+                        <li><a href="http://www.agsem.com/" target="_blank"> Iglesia de la Compañía de Jesús</a></li>
+                        <li><a href="https://www.moonlightstage.com/plan-your-visit/avo-playhouse" target="_blank">Monastery of Santa Rosa de Ocopa</a></li>
+                        <li><a href="https://www.broadwayHuanuco.biz/" target="_blank">Huánuco Cathedral</a></li>
+                        <li><a href="https://www.Huanuco.gov/residents/parks-trails" target="_blank">Museo Regional de Huánuco</a></li>
+                        <li><a href="http://www.moonlightstage.com" target="_blank">Parque Nacional Bosque de Pómac</a></li>
+                        <li><a href="https://www.Huanuco.gov/departments/recreation-comm-services/rancho-buena-Huanuco-adobe" target="_blank">Parque Nacional Cerro de la Sal</a></li>
+                        <li><a href="https://www.sdparks.org/content/sdparks/en/park-pages/RanchoGuajomeAdobe.html" target="_blank">Huallamarca Ruins</a></li>
+                        <li><a href="http://Huanucofarmersmarket.com/" target="_blank">Laguna de Huaypo</a></li>
+                        <li><a href="https://Huanucohistoricalsociety.com/" target="_blank">Huánuco Botanical Garden</a></li>
+                        <li><a href="https://www.thewavewaterpark.com/home" target="_blank">The Wave Waterpark</a></li>
+                    </ul>
+                    <p><sub><cite>Source: <a href="http://huanuco.com/">Huanuco.gov</a></cite></sub></p>
+                </section>
+                <div id="cal-box">
+                    <table id="calendar" class="center marg-0a bg-color-darkblue color-lm-black">
+                        <thead>
+                            <tr>
+                                <td class="cal-button nopad"><button id="cal-back" class="width100">&blacktriangleleft;</button></td>
+                                <th id="today" colspan="5" scope="colgroup">mmm dd, yyyy</th>
+                                <td class="cal-button nopad"><button id="cal-next" class="width100">&blacktriangleright;</button></td>
+                            </tr>
+                            <tr id="weekdays">
+                                <th id="Su" class="weekday">Su</th>
+                                <th id="Mo" class="weekday">Mo</th>
+                                <th id="Tu" class="weekday">Tu</th>
+                                <th id="We" class="weekday">We</th>
+                                <th id="Th" class="weekday">Th</th>
+                                <th id="Fr" class="weekday">Fr</th>
+                                <th id="Sa" class="weekday">Sa</th>
+                            </tr>
+                        </thead>
+                        <tbody id="month">
+                            <tr class="week">
+                                <td class="day Sunday"></td>
+                                <td class="day Monday"></td>
+                                <td class="day Tuesday"></td>
+                                <td class="day Wednesday"></td>
+                                <td class="day Thursday"></td>
+                                <td class="day Friday"></td>
+                                <td class="day Saturday"></td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day Sunday"></td>
+                                <td class="day Monday"></td>
+                                <td class="day Tuesday"></td>
+                                <td class="day Wednesday"></td>
+                                <td class="day Thursday"></td>
+                                <td class="day Friday"></td>
+                                <td class="day Saturday"></td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day Sunday"></td>
+                                <td class="day Monday"></td>
+                                <td class="day Tuesday"></td>
+                                <td class="day Wednesday"></td>
+                                <td class="day Thursday"></td>
+                                <td class="day Friday"></td>
+                                <td class="day Saturday"></td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day Sunday"></td>
+                                <td class="day Monday"></td>
+                                <td class="day Tuesday"></td>
+                                <td class="day Wednesday"></td>
+                                <td class="day Thursday"></td>
+                                <td class="day Friday"></td>
+                                <td class="day Saturday"></td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day Sunday"></td>
+                                <td class="day Monday"></td>
+                                <td class="day Tuesday"></td>
+                                <td class="day Wednesday"></td>
+                                <td class="day Thursday"></td>
+                                <td class="day Friday"></td>
+                                <td class="day Saturday"></td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day Sunday"></td>
+                                <td class="day Monday"></td>
+                                <td class="day Tuesday"></td>
+                                <td class="day Wednesday"></td>
+                                <td class="day Thursday"></td>
+                                <td class="day Friday"></td>
+                                <td class="day Saturday"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <figure id="agasem">
+                    <picture class="header">
+                        <source srcset="images/huanuco.jpg" media="(min-width:638px)" width="835" height="470">
+                        <img src="images/huanuco.jpg" alt="San Sebastian Colonial church" height="338" width="600" loading="eager">
+                    </picture>
+                    <figcaption>San Sebastian Church &amp; Circle Park</figcaption>
+                </figure>
+                <figure id="alta-vista">
+                    <picture class="header">
+                        <source srcset="images/jirishanca-moutain.jpg" media="(min-width:638px)" width="835" height="470">
+                        <img src="images/jirishanca-moutain.jpg" alt="Jirishanca Mountains" height="338" width="600" loading="eager">
+                    </picture>
+                    <figcaption>Jirishanca Mountains</figcaption>
+                </figure>
+                <figure id="bub-williamson">
+                    <picture class="header">
+                        <source srcset="images/calicanto-bridge.jpg" media="(min-width:638px)" width="835" height="470">
+                        <img src="images/calicanto-bridge.jpg" alt="Colonial bridge made of stones and eggs" height="338" width="600" loading="lazy">
+                    </picture>
+                    <figcaption>Calicanto Bridge</figcaption>
+                </figure>
+                <figure id="buena-vista">
+                    <picture class="header">
+                        <source srcset="images/main-square.jpg" media="(min-width:638px)" width="835" height="470">
+                        <img src="images/main-square.jpg" alt="Main Square" height="338" width="600" loading="lazy">
+                    </picture>
+                    <figcaption>Main Square</figcaption>
+                </figure>
+                <figure id="guajome">
+                    <picture class="header">
+                        <source srcset="images/kotosh-manos-cruzadas.jpg" media="(min-width:638px)" width="835" height="470">
+                        <img src="images/kotosh-manos-cruzadas.jpg" alt="Temple of Kotosh" height="338" width="600" loading="lazy">
+                    </picture>
+                    <figcaption>Kotosh Temple</figcaption>
+                </figure>
+                <figure id="moonlight">
+                    <picture class="header">
+                        <source srcset="images/tingo-maria.jpeg" media="(min-width:638px)" width="835" height="470">
+                        <img src="images/tingo-maria.jpeg" alt="City of Tingo Maria" height="338" width="600" loading="lazy">
+                    </picture>
+                    <figcaption>The city of the sleeping beauty Tingo Maria</figcaption>
+                </figure>
+            </div>
+        </main>
+
+        <footer class="font-size-0-75rem width100 bg-color-darkblue color-lm-white">
+            <div class="marg-0a width100">
+                <div id="contact">
+                    <p><b>Huanuco Chamber of Commerce</b></p>
+                    <p>Damaso Beraun St.</p>
+                    <p>Huanuco, PE 10001</p>
+                    <p>info@huanucochamber.org</p>
+                    <p>(+51)841890</p>
+                </div>
+                <div id="socials">
+                    <a href="https://www.youtube.com/user/HuanucoChamberCommerce" target="_blank">
+                        <img src="images/youtube.png" alt="youtube icon" width="64" height="64">
+                    </a>
+                    <a href="https://x.com/Huanucochamber" target="_blank">
+                        <img src="images/twitter.png" alt="twitter icon" width="64" height="64">
+                    </a>
+                    <a href="https://www.linkedin.com/company/Huanuco-chamber-of-commerce/" target="_blank">
+                        <img src="images/linkedin.png" alt="linkedin icon" width="64" height="64">
+                    </a>
+                </div>
+                <div id="info">
+                    <p>WDD231 Class Project</p>
+                    <p>Oliver Modesto</p>
+                    <p>&copy;<span id="currentyear">####</span> Huanuco Chamber of Commerce</p>
+                    <p id="lastModified">##/##/## ##:##:##</p>
+                </div>
+            </div>
+        </footer>
+
+        <dialog id="debug" class="marg-0a bg-color-lm-white color-lm-black">
+            <button class="close-button" type="button"></button>
+            <p>Test different last visit/current visit dates here.</p>
+            <label class="bg-color-lm-green color-lm-white">Date for last visit: <input type="date" id="dbLastVisit" class="bg-color-lm-green color-lm-white"></label>
+            <label class="bg-color-lm-green color-lm-white">Date for this visit: <input type="date" id="dbThisVisit" class="bg-color-lm-green color-lm-white"></label>
+            <button type="button" id="dbTestDates" class="bg-color-lm-green color-lm-white">Test Dates</button>
+        </dialog>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+#search {
+    display: flex;
+    gap: 4px;
+    margin: 6px auto;
+}
+
+#search :is(input, button) {
+    border: 2px solid var(--darkblue);
+    border-radius: 4px;
+    padding: 2px;
+}
+
+#search button {
+    aspect-ratio: 1;
+}
+
+#toggle-view {
+    display: none;
+}
+
+.placeholder {
+    height: 90px;
+}
+
+#list-items {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-bottom: 8px;
+}
+
+.card-holder {
+    background-color: var(--darkblue);
+    color: var(--black);
+    list-style: none;
+    padding: 2px;
+}
+
+.card {
+    background-color: var(--white);
+    border: none;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.card-addr,
+.card-url,
+.card-name,
+.card-phone {
+    margin: 2px;
+    border-bottom: 2px solid var(--trans);
+    grid-column: 2/3;
+}
+
+.card-header {
+    grid-column: 2/3;
+    padding: 0 2px 2px 2px;
+}
+
+.card-img {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 6px;
+    border-right: 2px solid var(--darkblue);
+    border-bottom: 0;
+}
+
+.card-header b {
+    font-family: var(--serif);
+    text-shadow: 1px 1px 0 var(--trans);
+}
+
+.card-url {
+    border: 0;
+}
+
+.card-img {
+    background-color: var(--lightblue);
+    border-right: 2px solid var(--trans);
+    display: flex;
+    grid-column: 1/2;
+    grid-row: 1/5;
+    min-height: 48px;
+    padding: 4px;
+    width: 48px;
+}
+
+.card-img img {
+    height: auto;
+    margin: auto;
+    width: 100%;
+}
+
+.card hr {
+    display: none;
+}
+
+.card p {
+    font-size: 0.9rem;
+    padding: 1px;
+}
+
+.card a {
+    text-decoration: underline;
+}

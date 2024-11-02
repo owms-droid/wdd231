@@ -5,25 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Huanuco Chamber of Commerce | Directory</title>
-    <meta name="author" content="Oliver Modesto">
-    <meta name="description" content="This is the directory for the Huanuco Chamber of Commerce - A class Project for Oliver Modesto's classwork in 'WDD231 - Web Frontend Development I'.">
+    <title>Huanuco Chamber of Commerce | Thank You</title>
+    <meta name="author" content="Corry McConnell Palmer">
+    <meta name="description" content="This is the 'thank you' page for the Huanuco Chamber of Commerce - A class Project for Corry McConnell Palmer's classwork in 'WDD231 - Web Frontend Development I'.">
 
     <meta property="og:description" content="Huanuco Chamber of Commerce - a class Project for Oliver Modesto's classwork in 'WDD231 - Web Frontend Development I'.">
     <meta property="og:image" content="https://owms-droid.github.io/wdd231/chamber/images/ogchamber.png">
-    <meta property="og:site_name" content="Huanuco Chamber of Commerce | OliverMS | WDD231">
-    <meta property="og:title" content="Huanuco Chamber of Commerce | Directory">
+    <meta property="og:site_name" content="Huanuco Chamber of Commerce | Oliver MS | WDD231">
+    <meta property="og:title" content="Huanuco Chamber of Commerce | Thank You">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://owms-droid.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://owms-droid.github.io/wdd231/chamber/join.html">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:image:alt" content="Huanuco Chamber of Commerce Logo">
 
-    <link rel="icon" href="/chamber/images/favicon.ico">
+    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="/chamber/styles/normalize.css">
     <link rel="stylesheet" href="/chamber/styles/styles.css">
     <link rel="stylesheet" href="/chamber/styles/style-large.css">
-    <link rel="stylesheet" href="/chamber/styles/directory.css">
-    <link rel="stylesheet" href="/chamber/styles/directory-large.css">
+    <link rel="stylesheet" href="/chamber/styles/thankyou.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&family=Lora:ital@0;1&display=swap" rel="stylesheet">
@@ -31,8 +31,7 @@
     <script src="/chamber/scripts/date.js" type="module"></script>
     <script src="/chamber/scripts/darkmode.js" type="module"></script>
     <script src="/chamber/scripts/menu.js" type="module"></script>
-    <script src="/chamber/scripts/scripts.js" type="module"></script>
-    <script src="/chamber/scripts/directory.js" type="module"></script>
+    <script src="/chamber/scripts/response.js" type="module"></script>
 </head>
 
 <body>
@@ -47,7 +46,7 @@
                 <div id="nav-holder">
                     <nav id="animateme" class="font-size-1-5rem bg-color-darkblue color-lm-white">
                         <a href="./">Home</a>
-                        <a href="directory.html" class="active">Directory</a>
+                        <a href="directory.html">Directory</a>
                         <a href="join.html">Join</a>
                         <a href="discover.html">Discover</a>
                     </nav>
@@ -78,30 +77,21 @@
             </div>
         </header>
 
-        <main class="marg-0a width100 bg-color-green">
-            <div id="search">
-                <input type="text" placeholder="(W.I.P.) Search..." class="color-lm-black">
-                <button id="go" type="button" class="center bg-color-orange color-black">Go</button>
-                <button id="toggle-view" class="is-grid center bg-color-orange color-black" type="button" aria-label="toggle view">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path class="grid-icon dark" fill="#2a2829" d="m5 3q-2 0-2 2v14q0 2 2 2h14q2 0 2-2v-14q0-2-2-2h-0.5v15.5h-13v-13h13h-5.25v5.25h5.25v2.5h-5.25v5.25h5.25h-12.75h5v-5.25h-5.25v-2.5h5.25v-5.25h7.75v-2.5" />
-                        <path class="list-icon dark" fill="#2a2829" d="m5 3a1 1 0 0 0 0 4a1 1 0 0 0 0-4m6 0a1 1 0 0 0 0 4h8a1 1 0 0 0 0-4Zm-6 7a1 1 0 0 0 0 4a1 1 0 0 0 0-4m6 0a1 1 0 0 0 0 4h8a1 1 0 0 0 0-4Zm-6 7a1 1 0 0 0 0 4a1 1 0 0 0 0-4m6 0a1 1 0 0 0 0 4h8a1 1 0 0 0 0-4Z" />
-                        <path class="grid-icon light" fill="#fff" d="m5 3q-2 0-2 2v14q0 2 2 2h14q2 0 2-2v-14q0-2-2-2h-0.5v15.5h-13v-13h13h-5.25v5.25h5.25v2.5h-5.25v5.25h5.25h-12.75h5v-5.25h-5.25v-2.5h5.25v-5.25h7.75v-2.5" />
-                        <path class="list-icon light" fill="#fff" d="m5 3a1 1 0 0 0 0 4a1 1 0 0 0 0-4m6 0a1 1 0 0 0 0 4h8a1 1 0 0 0 0-4Zm-6 7a1 1 0 0 0 0 4a1 1 0 0 0 0-4m6 0a1 1 0 0 0 0 4h8a1 1 0 0 0 0-4Zm-6 7a1 1 0 0 0 0 4a1 1 0 0 0 0-4m6 0a1 1 0 0 0 0 4h8a1 1 0 0 0 0-4Z" />
-                    </svg>
-                </button>
-            </div>
-            <ul id="list-items" class="is-grid style">
-                <li class="placeholder">I am a placeholder!</li>
-                <li class="placeholder">I am a placeholder!</li>
-                <li class="placeholder">I am a placeholder!</li>
-                <li class="placeholder">I am a placeholder!</li>
-                <li class="placeholder">I am a placeholder!</li>
-                <li class="placeholder">I am a placeholder!</li>
-                <li class="placeholder">I am a placeholder!</li>
-                <li class="placeholder">I am a placeholder!</li>
-                <li class="placeholder">I am a placeholder!</li>
-            </ul>
+        <main class="marg-0a width100 style bg-color-green">
+            <section id="thankyou" class="font-size-1-125rem">
+                <h2 class="font-size-1-75rem center bold">Thank you! Application sent successfully.</h2>
+
+                <p>We are glad you have taken the time to apply, <span id="firstName" class="bold">[firstName]</span> <span id="lastName" class="bold">[lastName]</span>.</p>
+
+                <p>Your application was successfully sent on <span id="time" class="bold">[Weekday, Month 00th, Year]</span>.</p>
+
+                <p>You will be hearing from us soon via your email (<span id="email" class="bold">[you@email.net]</span>) or phone (<span id="phone" class="bold">[1(234)567-8901]</span>) regarding "<span id="orgName" class="bold">[orgName]</span>" spot in the Huanuco Chamber of Commerce.</p>
+
+                <p>If you don't hear from us, please check your spam folder and make sure our number (<span id="chamber-phone" class="italic">(+51)841890</span>) is not in your blocked numbers list.</p>
+
+                <p class="font-size-1-25rem center italic">We will contact you soon!</p>
+
+            </section>
         </main>
 
         <footer class="font-size-0-75rem width100 bg-color-darkblue color-lm-white">

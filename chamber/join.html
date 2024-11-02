@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Huanuco Chamber of Commerce | Join</title>
+    <meta name="author" content="Oliver Modesto">
+    <meta name="description" content="This is the join page for the Huanuco Chamber of Commerce - A class Project for Oliver Modesto's classwork in 'WDD231 - Web Frontend Development I'.">
+
+    <meta property="og:description" content="Huanuco Chamber of Commerce - a class Project for Oliver Modesto's classwork in 'WDD231 - Web Frontend Development I'.">
+    <meta property="og:image" content="https://owms-droid.github.io/wdd231/chamber/images/ogchamber.png">
+    <meta property="og:site_name" content="Huanuco Chamber of Commerce | Oliver MS | WDD231">
+    <meta property="og:title" content="Huanuco Chamber of Commerce | Join">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://owms-droid.github.io/wdd231/chamber/join.html">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image:alt" content="Huanuco Chamber of Commerce Logo">
+
+    <link rel="icon" href="/chamber/images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/style-large.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/join-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&family=Lora:ital@0;1&display=swap" rel="stylesheet">
+
+    <script src="scripts/date.js" type="module"></script>
+    <script src="scripts/darkmode.js" type="module"></script>
+    <script src="scripts/menu.js" type="module"></script>
+    <script src="scripts/join.js" type="module"></script>
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <div>
+                <img src="/chamber/images/huanuco-chamber-logo.png" alt="">
+                <div id="title-text">
+                    <h1 id="title">Huanuco</h1>
+                    <p id="subtitle">Chamber of Commerce</p>
+                </div>
+                <div id="nav-holder">
+                    <nav id="animateme">
+                        <a href="./">Home</a>
+                        <a href="directory.html">Directory</a>
+                        <a href="join.html" class="active">Join</a>
+                        <a href="discover.html">Discover</a>
+                    </nav>
+                </div>
+                <div id="header-buttons">
+                    <button id="darkmode" type="button" aria-label="dark mode toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <mask id="e">
+                                <mask id="f">
+                                    <path d="m12 0 12 0 0 24 -12 0" fill="#fff" />
+                                </mask>
+                                <circle cx="12" cy="12" r="11" fill="#fff" />
+                                <circle mask="url(#f)" cx="12" cy="12" r="10" fill="#000" />
+                            </mask>
+                            <circle class="dark" mask="url(#e)" cx="12" cy="12" r="11" fill="#000" />
+                            <circle class="light" mask="url(#e)" cx="12" cy="12" r="11" fill="#fff" />
+                        </svg>
+                    </button>
+                    <button id="menu" type="button" aria-label="navigation menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path class="ham-x light" fill="#efefef" d="m12 10.55 6-6a.25.25 0 011.42 1.42l-6 6 6 6a.25.25 0 01-1.42 1.42l-6-6-6 6a.25.25 0 01-1.42-1.42l6-6-6-6a.25.25 0 111.42-1.42z" />
+                            <path class="ham-bars light" fill="#efefef" d="m4 4.25a1 1 0 000 2h16a1 1 0 000-2zm0 6.71699a1 1 0 000 2h16a1 1 0 000-2zm0 6.71699a1 1 0 000 2h16a1 1 0 000-2z" />
+                            <path class="ham-x dark" fill="#101010" d="m12 10.55 6-6a.25.25 0 011.42 1.42l-6 6 6 6a.25.25 0 01-1.42 1.42l-6-6-6 6a.25.25 0 01-1.42-1.42l6-6-6-6a.25.25 0 111.42-1.42z" />
+                            <path class="ham-bars dark" fill="#101010" d="m4 4.25a1 1 0 000 2h16a1 1 0 000-2zm0 6.71699a1 1 0 000 2h16a1 1 0 000-2zm0 6.71699a1 1 0 000 2h16a1 1 0 000-2z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div id="page">
+                <form id="form" action="thankyou.html" method="get">
+                    <h2 id="form-header">Membership Application</h2>
+                    <p id="required">required field</p>
+
+
+                    <h3>Personal Informnation</h3>
+                    <fieldset>
+                        <label id="lbl-first-name">First name:
+                            <input id="first-name" type="text" required name="firstName" title="first name" autocomplete="name">
+                        </label>
+
+                        <label id="lbl-last-name">Last name:
+                            <input id="last-name" type="text" required name="lastName" title="last name" autocomplete="family-name">
+                        </label>
+
+                        <label id="lbl-org-title">Title:<span class="opt">(optional)</span>
+                            <input id="org-title" type="text" name="orgTitle" title="Minimum 7 characters. Only A-Z (case insensitive), hyphens, and spaces" autocomplete="organization-title" pattern="[a-zA-Z\-\s]{7,}">
+                            <span id="title-limit">Minimum 7 characters<br>A-Z only (case insensitive)<br>Hyphens and spaces allowed</span>
+                        </label>
+                    </fieldset>
+
+                    <h3>Contact</h3>
+                    <fieldset>
+
+                        <label id="lbl-email">Email:
+                            <input id="email" type="email" required name="email" title="email" autocomplete="email" placeholder="you@email.web">
+                        </label>
+
+                        <label id="lbl-phone">Phone:
+                            <input id="phone" type="tel" required name="phone" title="phone number" autocomplete="tel">
+                        </label>
+
+                    </fieldset>
+
+                    <h3>Organization/Company</h3>
+                    <fieldset>
+                        <label id="lbl-org-name">Name:
+                            <input id="org-name" type="text" required name="orgName" title="business or organization name" autocomplete="organization">
+                        </label>
+
+                        <label id="lbl-org-desc">Description:<span class="opt">(optional)</span>
+                            <textarea id="org-desc" name="orgDesc" title="description of business or organization"></textarea>
+                        </label>
+
+                        <p id="level-label">Membership level: <span id="details-location"></span></p>
+                        <fieldset id="level">
+                            <label id="lbl-level-bronze">
+                                <input id="level-bronze" type="radio" name="level" value="bronze" required> Bronze
+                            </label>
+                            <label id="lbl-level-silver">
+                                <input id="level-silcer" type="radio" name="level" value="silver" required> Silver
+                            </label>
+                            <label id="lbl-level-gold">
+                                <input id="level-gold" type="radio" name="level" value="gold" required> Gold
+                            </label>
+                            <label id="lbl-level-np">
+                                <input id="level-np" type="radio" name="level" value="np" required> Non-Profit
+                            </label>
+                        </fieldset>
+
+                    </fieldset>
+
+                    <fieldset>
+                        <label id="what">"Each field element, including the textarea, should be encased in a label tag to support accessibility."<input id="time" type="hidden" name="time"></label>
+
+                        <button id="submit" type="submit">Send application</button>
+                    </fieldset>
+                </form>
+
+                <section id="level-details">
+                    <h2 id="level-header">Membership Levels</h2>
+                    <p id="level-inquire">Please contact us for more informnation</p>
+                    <div id="level-cards">
+                        <div id="bronze-card" class="level-card">
+                            <div class="card-backing level-1"></div>
+                            <div class="card-content">
+                                <p>Bronze</p>
+                                <button id="bronze-info" data-level="bronze" class="info-button" type="button">Learn More</button>
+                            </div>
+                        </div>
+                        <div id="silver-card" class="level-card">
+                            <div class="card-backing level-2"></div>
+                            <div class="card-content">
+                                <p>Silver</p>
+                                <button id="silver-info" data-level="silver" class="info-button" type="button">Learn More</button>
+                            </div>
+                        </div>
+                        <div id="gold-card" class="level-card">
+                            <div class="card-backing level-3"></div>
+                            <div class="card-content">
+                                <p>Gold</p>
+                                <button id="gold-info" data-level="gold" class="info-button" type="button">Learn More</button>
+                            </div>
+                        </div>
+                        <div id="np-card" class="level-card">
+                            <div class="card-backing level-np"></div>
+                            <div class="card-content">
+                                <p>Non-Profit</p>
+                                <button id="np-info" data-level="np" class="info-button" type="button">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <div>
+                <div id="contact">
+                    <p><b>Huanuco Chamber of Commerce</b></p>
+                    <p>Damaso Beraun St.</p>
+                    <p>Huanuco, PE 10001</p>
+                    <p>info@huanucochamber.org</p>
+                    <p>(+51)841890</p>
+                </div>
+                <div id="socials">
+                    <a href="https://www.youtube.com/user/HuanucoChamberCommerce" target="_blank">
+                        <img src="images/youtube.png" alt="youtube icon" width="64" height="64">
+                    </a>
+                    <a href="https://x.com/Huanucochamber" target="_blank">
+                        <img src="images/twitter.png" alt="twitter icon" width="64" height="64">
+                    </a>
+                    <a href="https://www.linkedin.com/company/Huanuco-chamber-of-commerce/" target="_blank">
+                        <img src="images/linkedin.png" alt="linkedin icon" width="64" height="64">
+                    </a>
+                </div>
+                <div id="info">
+                    <p>WDD231 Class Project</p>
+                    <p>Oliver Modesto</p>
+                    <p>&copy;<span id="currentyear">####</span> Huanuco Chamber of Commerce</p>
+                    <p id="lastModified">##/##/## ##:##:##</p>
+                </div>
+            </div>
+        </footer>
+        <dialog id="modal">
+            <div id="modal-border">
+                <div id="modal-content">
+                    <button id="modal-close" type="button"></button>
+                    <h2>The <span id="modal-level">( level )</span> Level</h2>
+                    <ul id="modal-list"></ul>
+                </div>
+            </div>
+        </dialog>
+    </div>
+</body>
+
+</html>

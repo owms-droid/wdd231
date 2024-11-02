@@ -1,0 +1,97 @@
+@media screen and (min-width:868px) {
+    section {
+        margin: 12px 4px;
+    }
+
+    .section-header {
+        padding-left: 6px;
+        text-align: left;
+    }
+
+    #hero {
+        max-height: 260px;
+        outline: 0;
+    }
+
+    #hero-img {
+        max-height: 260px;
+        padding: 0 4px 4px 4px;
+    }
+
+    #hero-text {
+        font-size: 26px;
+        grid-column: 2/6;
+        grid-row: 2/6;
+        padding-top: 48px;
+    }
+
+    #hero-title {
+        height: 100%;
+        width: 100%;
+    }
+
+    #page {
+        display: grid;
+        grid-template-columns: 2.1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    #home-title {
+        grid-column: 1/4;
+        font-size: 1.6rem;
+        padding: 0 6px;
+        text-align: left;
+    }
+
+    #event-list {
+        margin: 0 4px 4px;
+    }
+
+    .weather-event {
+        margin: 0;
+    }
+
+    .single-event .weather-event {
+        margin: 0;
+        padding: 0;
+    }
+
+    .single-event .weather-event img {
+        width: 60px;
+    }
+
+    #forecast-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #forecast-info li {
+        padding: 0 24px 0 0;
+    }
+
+    #spotlight-list {
+        display: grid;
+        grid-column: 1/4;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 18px;
+    }
+
+    .spotlight-card {
+        grid-template-rows: 47px auto auto auto;
+        height: 170px;
+    }
+
+    .spotlight-card:nth-of-type(3) {
+        display: grid;
+    }
+
+    .spacer~p {
+        grid-column: 1/3;
+        padding-left: 4px;
+    }
+
+    .card-header {
+        align-content: center;
+        height: 48px;
+    }
+}

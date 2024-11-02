@@ -1,0 +1,28 @@
+@media screen and (min-width:868px) {
+    #page {
+        display: grid;
+        flex-direction: row;
+        grid-template-columns: 1fr auto 1fr auto 1fr;
+        margin: 4px 0;
+        padding: 0;
+    }
+
+    form {
+        grid-column: 2/3;
+    }
+
+    #level-details {
+        grid-column: 4/5;
+    }
+
+    form,
+    #level-details {
+        margin: 4px 0;
+        max-width: 402px;
+        min-width: 376px;
+    }
+
+    #details-location::before {
+        content: '(details to the right)';
+    }
+}

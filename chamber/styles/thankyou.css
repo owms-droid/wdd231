@@ -1,0 +1,184 @@
+#thankyou {
+    margin: 6px 2px;
+}
+
+h2 {
+    margin: 0 auto 4px auto;
+    padding-bottom: 4px;
+}
+
+#thankyou p {
+    padding: 8px 32px;
+}
+
+#thankyou p:last-child {
+    margin-top: 8px;
+    padding-top: 8px;
+}
+
+#debug {
+    position: fixed;
+    bottom: 0;
+    border: 2px solid var(--darkblue);
+    gap: 4px;
+    padding: 8px 32px;
+    flex-direction: column;
+}
+
+#debug label,
+#debug input,
+#dbTestDates {
+    align-items: center;
+    justify-content: center;
+    padding: 1px;
+    display: inline-flex;
+}
+
+#dbTestDates:hover,
+#dbTestDates:focus-visible {
+    outline: 1px inset var(--lm-green);
+}
+
+#debug[open] {
+    display: inline-flex
+}
+
+#discover-page {
+    margin: 4px 2px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas: 'a' 'e' 'f' 'b' 'g' 'h' 'c' 'i' 'j' 'd';
+}
+
+#discover-page>* {
+    margin: 4px 2px;
+}
+
+#discover-page section :is(p, ul, li) {
+    margin: 4px;
+}
+
+#discover-page a:hover {
+    color: var(--red);
+    text-decoration: underline;
+}
+
+#last-visited {
+    grid-area: a;
+    padding: 4px;
+}
+
+#welcome-to-vista {
+    grid-area: b;
+}
+
+#sights-and-sounds {
+    grid-area: c;
+}
+
+#cal-box {
+    grid-area: d;
+    padding: 8px;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+#agasem {
+    grid-area: e;
+}
+
+#alta-vista {
+    grid-area: f;
+}
+
+#bub-williamson {
+    grid-area: g;
+}
+
+#buena-vista {
+    grid-area: h;
+}
+
+#guajome {
+    grid-area: i;
+}
+
+#moonlight {
+    grid-area: j;
+}
+
+#discover-page figure {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+#discover-page figcaption {
+    padding: 2px 8px;
+    font-size: 0.75rem;
+}
+
+picture {
+    display: inline-flex;
+}
+
+#discover-page img {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    height: auto;
+    width: 100%;
+}
+
+#calendar {
+    border-radius: 4px;
+}
+
+#calendar td {
+    padding: 4px;
+}
+
+#calendar tr * {
+    border-radius: 2px;
+    background-color: var(--lightblue);
+}
+
+.cal-button button {
+    border-radius: 1px;
+    height: 100%;
+}
+
+#calendar .day {
+    background-color: var(--lm-white);
+}
+
+#calendar .other-month {
+    background-color: #ffffffaf;
+}
+
+@media screen and (min-width:868px) {
+    #thankyou {
+        margin: 8px 38px;
+    }
+
+    #discover-page {
+        grid-template-areas:
+            'a e'
+            'b e'
+            'b f'
+            'b f'
+            'b g'
+            'c g'
+            'c h'
+            'c h'
+            'c i'
+            'd i'
+            'd j'
+            'd j';
+    }
+
+    #discover-page img:hover {
+        border-color: transparent;
+        box-shadow: 0 0 16px var(--yellow);
+        outline: 2px solid var(--yellow);
+        transform: scale(1.005);
+    }
+}
