@@ -26,4 +26,4 @@ function buildList(members) {
         listItems.appendChild(cardHolder);
     });
 }
-(async () => buildList((await get('/data/members.json')).members, ge('list-items')))();
+(async () => buildList((await get('data/members.json')).members, ge('list-items')))();
