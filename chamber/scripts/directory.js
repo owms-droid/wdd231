@@ -1,29 +1,65 @@
-import { ge, get, toggle } from "./utils.mjs";
-toggle('toggle-view', ['list-items', 'toggle-view'], 'is-grid', 'listView');
-function buildList(members) {
-    const listItems = ge('list-items');
-    listItems.innerHTML = '';
-    members.forEach(member => {
-        const cardHolder = document.createElement('li');
-        cardHolder.classList.add('card-holder', `level-${member.level}`, (member.image) ? 'has-img' : 'no-img','style');
-        function img(member) {
-            const img = document.createElement('img');
-            img.setAttribute('src', member.image);
-            img.setAttribute('alt', `image for ${member.name}`);
-            img.setAttribute('width', '250');
-            img.setAttribute('height', '48');
-            return img.outerHTML;
-        }
-        cardHolder.innerHTML = `
-            <div class='card'>
-                ${(member.image)
-                ? `<div class='header card-img'>${img(member)}</div><hr><p class='card-name'>${member.name}</p>`
-                : `<p class='header card-header'><b>${member.name}</b></p><hr>`}
-                <p class='card-addr'>${member.address}</p>
-                <p class='card-phone'>${member.phone}</p>
-                <p class='card-url'><a href='https://www.${member.website}' target='_blank'>${member.website}</a></p>
-            </div>`;
-        listItems.appendChild(cardHolder);
-    });
-}
-(async () => buildList((await get('data/members.json')).members, ge('list-items')))();
+document.addEventListener('DOMContentLoaded', () => {
+	const membersContainer = document.getElementById('members-container');
+	const gridViewBtn = document.getElementById('grid-view-btn');
+	const listViewBtn = document.getElementById('list-view-btn');
+  
+	// Fetch member data
+	async function fetchMembers() {
+		try {
+		  const response = await fetch('data/members.json');
+		  if (!response.ok) {
+			throw new Error('Network response was not ok');
+		  }
+		  const members = await response.json();
+		  displayMembers(members);
+		} catch (error) {
+		  console.error('Error fetching members:', error);
+		  displayError();
+		}
+	  }
+	
+	// Display members as cards
+	function displayMembers(members) {
+	membersContainer.innerHTML = ''; // Clear existing content
+	if (Array.isArray(members)) {
+		members.forEach(member => {
+		const memberCard = document.createElement('div');
+		memberCard.classList.add('member-card');
+		memberCard.innerHTML = `
+			<img src="images/${member.icon}" alt="${member.name}">
+			<h2>${member.name}</h2>
+			<p>${member.address}</p>
+			<p>${member.phone}</p>
+			<a href="${member.website}" target="_blank">${member.website}</a>
+			<p>Membership Level: ${member.membershipLevel}</p>
+			<p>${member.founded}</p>
+		`;
+		membersContainer.appendChild(memberCard);
+		});
+	} else {
+		displayError();
+	}
+	}
+
+	// Display error message
+	function displayError() {
+	const errorCard = document.createElement('div');
+	errorCard.classList.add('error-card');
+	errorCard.textContent = 'Error fetching member data';
+	membersContainer.appendChild(errorCard);
+	}
+
+	// Toggle between grid and list view
+	gridViewBtn.addEventListener('click', () => {
+	membersContainer.classList.remove('list-view');
+	membersContainer.classList.add('grid-view');
+	});
+
+	listViewBtn.addEventListener('click', () => {
+	membersContainer.classList.remove('grid-view');
+	membersContainer.classList.add('list-view');
+	});
+
+	// Fetch members on page load
+	fetchMembers();
+});

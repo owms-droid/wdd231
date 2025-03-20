@@ -1,4 +1,5 @@
-[
+{
+  "members":[
     {
       "name": "Tech Innovators Inc.",
       "address": "123 Silicon Valley, CA 94043, USA",
@@ -69,5 +70,6 @@
       "founded": 1995,
       "industry": "Food and Beverage"
     }
-]
+  ]
+}
   

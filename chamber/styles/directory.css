@@ -1,17 +1,14 @@
-#search {
-    display: flex;
-    gap: 4px;
-    margin: 6px auto;
+.menu {
+	margin: 1rem auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: #c852ff;
+	text-align: center;
 }
 
-#search :is(input, button) {
-    border: 2px solid var(--darkblue);
-    border-radius: 4px;
-    padding: 2px;
-}
-
-#search button {
-    aspect-ratio: 1;
+.menu button {
+	padding: 1rem;
+	font-weight: 700;
 }
 
 #toggle-view {
