@@ -10,6 +10,15 @@ body {
 	color: #fff;
 }
 
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+a:hover {
+	color: rgb(196, 164, 132);
+}
+
 header p {
 	color: rgb(48, 27, 0);
 	text-align: center;
