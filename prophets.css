@@ -17,6 +17,10 @@ a {
 
 a:hover {
 	color: rgb(196, 164, 132);
+}
+
+a:visited {
+	color: rgb(196, 164, 132);
 	text-decoration: none;
 }
 
