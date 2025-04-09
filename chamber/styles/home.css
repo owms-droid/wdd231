@@ -26,7 +26,7 @@ ul {
 
 section {
     background-color: var(--white);
-    border: 2px solid var(--darkblue);
+    border: 1px solid var(--darkblue);
     border-radius: 8px;
     margin: 4px;
 }
@@ -48,17 +48,17 @@ section {
 #hero {
     align-items: center;
     background-color: var(--body-bg);
-    border-bottom: 2px solid var(--outline);
-    border-left: 2px solid var(--outline);
+    border-bottom: 1px solid var(--outline);
+    border-left: 1px solid var(--outline);
+    border-right: 1px solid var(--outline);
     border-radius: unset;
-    border-right: 2px solid var(--outline);
     display: grid;
     grid-template-columns: repeat(10, 10%);
     grid-template-rows: repeat(10, 10%);
     justify-items: center;
     margin: 0 auto;
     max-height: 128px;
-    outline: 2px solid var(--outline);
+    outline: 1px solid var(--outline);
     width: 100%;
 }
 
@@ -68,7 +68,7 @@ section {
     height: auto;
     max-height: 128px;
     object-fit: cover;
-    padding: 0 0 1.25px 0;
+    padding: 0;
     width: 100%;
 }
 
@@ -138,7 +138,7 @@ section {
 
 #home-title {
     background-color: var(--lightblue);
-    border: 2px solid var(--darkblue);
+    border: 1px solid var(--darkblue);
     border-radius: 8px;
     color: #000;
     font-size: 2rem;
@@ -271,7 +271,7 @@ section {
 }
 
 .spotlight-card {
-    border: 2px solid var(--darkblue);
+    border: 1px solid var(--darkblue);
     border-radius: 8px;
     display: grid;
     grid-template-columns: auto 1fr;
