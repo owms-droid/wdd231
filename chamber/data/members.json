@@ -1,75 +1,72 @@
-{
-  "members":[
-    {
-      "name": "Tech Innovators Inc.",
-      "address": "123 Silicon Valley, CA 94043, USA",
-      "phone": "+1-650-555-1234",
-      "website": "https://www.techinnovators.com",
-      "image": "tech_innovators_logo.png",
-      "membershipLevel": 3,
-      "founded": 2005,
-      "industry": "Technology"
-    },
-    {
-      "name": "Green Energy Solutions",
-      "address": "456 Solar Drive, Austin, TX 73301, USA",
-      "phone": "+1-512-555-5678",
-      "website": "https://www.greenenergy.com",
-      "image": "green_energy_icon.png",
-      "membershipLevel": 2,
-      "founded": 2010,
-      "industry": "Renewable Energy"
-    },
-    {
-      "name": "Global Marketing Co.",
-      "address": "789 Madison Ave, New York, NY 10001, USA",
-      "phone": "+1-212-555-7890",
-      "website": "https://www.globalmarketingco.com",
-      "image": "global_marketing_logo.png",
-      "membershipLevel": 1,
-      "founded": 2000,
-      "industry": "Marketing and Advertising"
-    },
-    {
-      "name": "Healthy Living Products",
-      "address": "101 Organic St, Boulder, CO 80301, USA",
-      "phone": "+1-303-555-1010",
-      "website": "https://www.healthyliving.com",
-      "image": "healthy_living_icon.png",
-      "membershipLevel": 3,
-      "founded": 2012,
-      "industry": "Health and Wellness"
-    },
-    {
-      "name": "Urban Developers Ltd.",
-      "address": "202 City Center, Chicago, IL 60601, USA",
-      "phone": "+1-312-555-2020",
-      "website": "https://www.urbandevelopers.com",
-      "image": "urban_developers_logo.png",
-      "membershipLevel": 2,
-      "founded": 1998,
-      "industry": "Real Estate"
-    },
-    {
-      "name": "NextGen Robotics",
-      "address": "303 Tech Park, Seattle, WA 98101, USA",
-      "phone": "+1-206-555-3030",
-      "website": "https://www.nextgenrobotics.com",
-      "image": "nextgen_robotics_icon.png",
-      "membershipLevel": 1,
-      "founded": 2015,
-      "industry": "Artificial Intelligence and Robotics"
-    },
-    {
-      "name": "Fresh Foods Market",
-      "address": "404 Main St, San Francisco, CA 94105, USA",
-      "phone": "+1-415-555-4040",
-      "website": "https://www.freshfoodsmarket.com",
-      "image": "fresh_foods_logo.png",
-      "membershipLevel": 3,
-      "founded": 1995,
-      "industry": "Food and Beverage"
-    }
-  ]
-}
-  
+[
+  {
+    "name": "Tech Innovators Inc.",
+    "address": "123 Silicon Valley, CA 94043, USA",
+    "phone": "+1-650-555-1234",
+    "website": "https://www.techinnovators.com",
+    "image": "tech_innovators_logo.png",
+    "membershipLevel": 3,
+    "founded": 2005,
+    "industry": "Technology"
+  },
+  {
+    "name": "Green Energy Solutions",
+    "address": "456 Solar Drive, Austin, TX 73301, USA",
+    "phone": "+1-512-555-5678",
+    "website": "https://www.greenenergy.com",
+    "image": "green_energy_icon.png",
+    "membershipLevel": 2,
+    "founded": 2010,
+    "industry": "Renewable Energy"
+  },
+  {
+    "name": "Global Marketing Co.",
+    "address": "789 Madison Ave, New York, NY 10001, USA",
+    "phone": "+1-212-555-7890",
+    "website": "https://www.globalmarketingco.com",
+    "image": "global_marketing_logo.png",
+    "membershipLevel": 1,
+    "founded": 2000,
+    "industry": "Marketing and Advertising"
+  },
+  {
+    "name": "Healthy Living Products",
+    "address": "101 Organic St, Boulder, CO 80301, USA",
+    "phone": "+1-303-555-1010",
+    "website": "https://www.healthyliving.com",
+    "image": "healthy_living_icon.png",
+    "membershipLevel": 3,
+    "founded": 2012,
+    "industry": "Health and Wellness"
+  },
+  {
+    "name": "Urban Developers Ltd.",
+    "address": "202 City Center, Chicago, IL 60601, USA",
+    "phone": "+1-312-555-2020",
+    "website": "https://www.urbandevelopers.com",
+    "image": "urban_developers_logo.png",
+    "membershipLevel": 2,
+    "founded": 1998,
+    "industry": "Real Estate"
+  },
+  {
+    "name": "NextGen Robotics",
+    "address": "303 Tech Park, Seattle, WA 98101, USA",
+    "phone": "+1-206-555-3030",
+    "website": "https://www.nextgenrobotics.com",
+    "image": "nextgen_robotics_icon.png",
+    "membershipLevel": 1,
+    "founded": 2015,
+    "industry": "Artificial Intelligence and Robotics"
+  },
+  {
+    "name": "Fresh Foods Market",
+    "address": "404 Main St, San Francisco, CA 94105, USA",
+    "phone": "+1-415-555-4040",
+    "website": "https://www.freshfoodsmarket.com",
+    "image": "fresh_foods_logo.png",
+    "membershipLevel": 3,
+    "founded": 1995,
+    "industry": "Food and Beverage"
+  }
+]
