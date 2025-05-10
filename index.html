@@ -7,72 +7,83 @@
     <meta name="author" content="Oliver Modesto" />
     <meta
     name="description"
-    content="WDD 231 - Web Frontend Develoment I - Oliver Modesto, 
-    this is a course home page." />
-    <meta property="og:title" content="Home Page for WDD231 assignment"/>
+    content="WDD 231 - Web Frontend Develoment I - Oliver Modesto's Course Home Page." />
+    <meta property="og:title" content="Home Page for WDD231 Assignment"/>
     <meta property="og:type" content="website"/>
     <meta property="og:image" content="https://www.gannett-cdn.com/presto/2019/08/22/USAT/ea93078c-fa02-453b-bc68-aebe5861e2c3-7-machu-picchu.jpg?crop=2120,1193,x0,y116&width=2120&height=1193&format=pjpg&auto=webp"/>
-    <meta property="og:url" content="https://owms-droid.github.io/wdd231/"/>
+    <meta property="og:url" content="https://owms-droid.github.io/wdd231/index.html"/>
+
+    <!-- Styles links -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="icon" href="favicon.ico">
-    <script src="scripts/script.js" defer></script>
+
+    <!-- JavaScript links -->
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
 </head>
 <body>
     <header>
+        <div class="profile">
+            <img class="photo" src="./images/profile-pic.jpeg" alt="Oliver Modesto Pic">
+            <h1 class="owner">Oliver W. Modesto</h1>
+        </div>
         <nav>
-            <img class="profile" src="./images/profile-pic.jpeg" alt="Oliver Modesto Pic">
-            <h1>Oliver W. Modesto</h1>
             <ul>
                 <li><a href="#" title="Home">Home</a></li>
                 <li><a href="#" title="Chamber">Chamber</a></li>
+                <li><a href="#" title="Final">Final</a></li>
                 <li><a href="https://github.com/owms-droid" title="GitHub">GitHub Profile</a></li>
                 <li><a href="https://www.linkedin.com/in/oliver-modesto/" title="LinkedIn">LinkedIn</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="card">
+        
+        <section id="card-work">
             <h2>Course Work</h2>
-            <div class="about">
+            <div class="coursework">
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>work 1</li>
+                    <li>work 2</li>
+                    <li>work 3</li>
                 </ul>
             </div>
         </section>
         
-        <section class="card">
+        <section id="card-city">
             <h2>Huanuco, Peru</h2>
-            <div class="resources">
-                <img src="" alt="">
-                
+            <div class="city">
+                <img src="./images/huanuco.jpg" alt="Huanuco City" class="city-pic">
+                <p>Calicanto Bridge</p>
             </div>
         </section>
 
-        <section class="card"></section>
-            <h2>Web and Programming Certificate</h2>
-            <div class="resources">
+        <section id="card-certificate">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="courses">
                 <ul>
-                    <li>
-                        <a href="">All</a>
-                    </li>
-                    <li>
-                        <a href="">CSE</a>
-                    </li>
-                    <li>
-                        <a href="">WDD</a>
-                    </li>
+                    <li><a href="">All</a></li>
+                    <li><a href="">CSE</a></li>
+                    <li><a href="">WDD</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="">CSE 111</a></li>
+                    <li><a href="">CSE 121</a></li>
+                    <li><a href="">CSE 123</a></li>
+                    <li><a href="">CSE 130</a></li>
+                    <li><a href="">CSE 132</a></li>
+                    <li><a href="">WDD 231</a></li>
                 </ul>
             </div>
         </section>
     </main>
     <footer>
-        <p></p>
-            ©
+        <p>
             <span id="currentyear"></span>
-            <span>| Oliver Modesto | Peru</span>
         </p>
         <p id="lastModified"></p>
     </footer>    
