@@ -165,7 +165,7 @@ h2 {
   justify-content: center;
 }
 
-.courses li {
+.coursesMenu {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -174,18 +174,65 @@ h2 {
   padding: 5px 40px;
   border-radius: 5px;
   background-color: var(--box-menu);
-}
-
-.courses li:hover {
-  background-color: var(--box-menu-hover);
-  font-weight: 700;
-}
-.courses li a {
   color: var(--font-light);
   text-decoration: none;
   font-weight: 400;
   font-size: 1rem;
   text-align: center;
+}
+
+.coursesMenu:hover {
+  background-color: var(--box-menu-hover);
+  font-weight: 700;
+}
+
+.courses-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-size: 1.2rem;
+}
+
+.courses-list ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#openBotton {
+  background-color: var(--box-primary);
+  color: var(--font-light);
+  margin: 10px 20px;
+  padding: 20px 60px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  align-items: center;
+}
+
+dialog {
+  border: 1px solid var(--box-primary);
+  border-radius: .25rem;
+  padding: 1rem;
+  background-color: var(--background);
+  box-shadow: var(--box-shadow);
+  width: 90%;
+  max-width: 600px;
+}
+
+::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+dialog button {
+  position: absolute;
+  top: 23px;
+  right: 23px;
+  padding: .5rem 1rem;
+  border: 1px solid var(--box-primary);
 }
 
 footer {
